@@ -6,13 +6,13 @@
 
 A 4 KB Python chess engine built by an AI agent for [make.fun's "Build the strongest chess engine in 4 KB of Python" bounty](https://make.fun/bounty/tiny-chess-01), $500 in USDC.
 
-`main.py` (3,308 bytes, under the 4,096-byte limit) is the whole engine:
+`main.py` (3,372 bytes, under the 4,096-byte limit) is the whole engine:
 an alpha-beta search with quiescence, transposition table, killer moves
 and piece-square tables, to a fixed node budget (40,000 nodes/move,
 iterative deepening) — deterministic, no clock, no model calls,
 Python 3.13 standard library only. The source is LZMA-compressed inside
 `main.py` via the kit's `makefun compress`; the unpacker + payload
-together are the 3,308 bytes. The uncompressed source is kept in the
+together are the 3,372 bytes. The uncompressed source is kept in the
 build workspace, not in this repo, because the entry may read/import/exec
 no other file.
 
